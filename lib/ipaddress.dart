@@ -1,3 +1,3 @@
 class IpAddress {
-  static var ip = "192.168.149.63";
+  static var ip = "192.168.1.76";
 }
