@@ -10,10 +10,10 @@ class Connection {
     String UrlServer = "http://" + IpAddress.ip + "/connection/add_note.php";
     Uri uri = Uri.parse(UrlServer);
     var data = {
-      'Id': user_id,
-      'Title': tasktitle,
-      'Description': taskdescription,
-      'Category': category,
+      'title': tasktitle,
+      'description': taskdescription,
+      'category': category,
+      'user_id': user_id,
       // 'EndDate': EndDate,
     };
     var response = await http.post(uri, body: data);
